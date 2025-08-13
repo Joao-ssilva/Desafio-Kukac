@@ -40,11 +40,10 @@ Cypress.Commands.add('editCard', (oldCard, newCard) => {
 // Comando para excluir uma lista
 Cypress.Commands.add('deleteList', (listName) => {
   cy.contains(listName) 
-// encontra o header pela h1 que contém '1', sobe para o header e encontra o svg da lixeira
   cy.contains('h1.board-header-title', `${listName}`)
-  .parent()                  // header
-  .find('.trash svg')        // svg dentro do div.trash
-  .should('be.visible')      // opcional: garante que está visível
+  .parent()                  
+  .find('.trash svg')        
+  .should('be.visible')      
   .click();
   cy.contains(listName).should('not.exist');
 });
