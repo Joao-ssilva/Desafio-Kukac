@@ -1,0 +1,11 @@
+{
+  "name": "teste-tecnico-kukac",
+  "version": "1.0.0",
+  "description": "Projeto de teste end to end - Teste técnico KUKAC",
+  "main": "index.js",
+  "author": "João Silva",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "12.2.0"
+  }
+}
